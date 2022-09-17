@@ -1,1 +1,4 @@
-
+Pesquise na bibliografia disponível. 
+Defina o que é:
+1) Sistema Isolado: Quando os sistemas que executam determinadas funções não compartilham os dados entre si, podendo causar o problema da redundância de dados.
+2) Sistema Integrado: Os sistemas conversam entre si, compartilhando dados e tornando as informações consistentes e não repetitivas.
