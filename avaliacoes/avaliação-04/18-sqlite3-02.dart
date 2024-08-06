@@ -114,6 +114,17 @@ void main() async {
   // Inicializar o banco de dados
   final db = AlunoDatabase.instance;
 
+  // Inserir dois alunos
+  final aluno1 = Aluno(nome: 'João', dataNascimento: '2000-01-01');
+  final aluno2 = Aluno(nome: 'Maria', dataNascimento: '1999-05-15');
+  int alunoId1 = await db.insertAluno(aluno1);
+  int alunoId2 = await db.insertAluno(aluno2);
+
+  // Imprimir os nomes dos alunos
+  for (var aluno in alunos) {
+    print('Nome do aluno: ${aluno.nome}');
+  }
+  
   // Inserir um aluno
   final aluno = Aluno(nome: 'João', dataNascimento: '2000-01-01');
   int alunoId = await db.insertAluno(aluno);
